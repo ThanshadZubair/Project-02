@@ -1,10 +1,17 @@
-import './App.css';
-import Header from "./components/includes/Header";
+import React from 'react'
+// import Header from './components/includes/Header'
+import SubHead from './components/includes/SubHead';
+import Header from './components/includes/Header';
 
 function App() {
   return (
-    <Header />
-  );
+    <>
+        <Header />
+        <SubHead />
+    </>
+   
+ );
+      
 }
 
 export default App;
