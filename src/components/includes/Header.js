@@ -64,7 +64,7 @@ const SearchBar =styled.div`
   justify-content: space-between;
 `;
 const Search = styled.small`
-font-size: 15px;
+font-size: 18px;
 margin: 0 auto;
 display: inline-block;
 `;
@@ -80,7 +80,7 @@ const Notification = styled.img`
   width: 100%;
 `;
 const AdminData = styled.div`
-  width: 12%;
+  width: 14%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,31 +101,24 @@ const AdminStatus = styled.span`
   
 `;
 const AdminName = styled.h3`
-font-size: 18px;
+  font-size: 18px;
 
 `;
 const AddMenu = styled.div`
-  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   width: 15%;
   height: 60px;
   border: 1px solid #FFF;
   border-radius:30px;
   background-color: #EEECE2;
+  
 `;
 const AddImg = styled.img`
-  position:absolute;
-  left: 16px;
-  top: 8px;
   width:18%;
-  
   `;
-  const AddContent = styled.h2`
-  font-size: 20px;
-  position: relative;
-  left:30%;
-  bottom: 5% ;
-
-
- 
+const AddContent = styled.h2`
+  font-size: 18px;
  `;
 
