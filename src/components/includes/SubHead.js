@@ -11,34 +11,66 @@ export default function SubHead() {
   return (
     <>
         <SubHeadr>
-           <LogoImage src={Logo} width={"40px"} />
-           <Items>
-                <Item src={Menu}/>
-                <Item src={Tea}/>
-                <Item src={Wallet}/>
-                <Item src={Graph}/>
-                <Item src={Settings}/>
-            </Items>   
+          <ImgContainer>
+            <LogoImage src={Logo} alt="" />
+          </ImgContainer> 
+          <Items>
+            <Item>
+              <img src={Menu} alt=""/>
+            </Item>
+            <Item>
+              <img src={Tea} alt=""/>
+            </Item>
+            <Item>
+              <img src={Wallet} alt=""/>
+            </Item>
+            <Item>
+              <img src={Graph} alt=""/>
+            </Item>
+            <Item>
+              <img src={Settings} alt=""/>
+            </Item>
+          </Items>   
         </SubHeadr>
       
     </>
   )
 }
 const SubHeadr = styled.div`
- width:100%;
- padding-left: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width:80%;
+  padding: 20px; 
+  padding-top: 50px;
+`;
+const ImgContainer = styled.span`
+  display: inline-block;
+  width: 45px;
+  margin-bottom: 60px;
 `;
 const LogoImage = styled.img`
   display:block;
-  padding: 40px 30px;
+  width: 100%;
 `; 
 const Items = styled.ul`
-  width: 20px;
+  padding: 0;
+  width: 100%;
   display:flex;
+  flex-direction:column;
   flex-wrap:wrap;
-  height: 400px;
+  align-items:center;
 `;
-const Item = styled.img`
-
+const Item = styled.span`
+  display: inline-block;
+  width: 30px;
+  margin-bottom: 50px ;
+img {
+  width: 100%;
+  display: block;
+}
+&:last-child{
+  margin-bottom: 0;
+}
 `;
 
