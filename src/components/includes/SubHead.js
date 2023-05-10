@@ -41,12 +41,12 @@ const SubHeadr = styled.div`
   align-items: center;
   flex-direction: column;
   width:80%;
-  padding: 20px; 
-  padding-top: 50px;
+  /* padding: 20px;  */
+  padding-top: 40%;
 `;
 const ImgContainer = styled.span`
   display: inline-block;
-  width: 45px;
+  width: 50px;
   margin-bottom: 60px;
 `;
 const LogoImage = styled.img`
