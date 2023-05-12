@@ -1,23 +1,30 @@
 import React from 'react'
 import "./App.css"
-// import Brand from './App.css/Appglass'
-import SubHead from './components/includes/SubHead';
-import Header from './components/includes/Header';
-import { styled } from 'styled-components';
+
+import Top from './components/screens/Top';
+import MenuItem from './components/screens/MenuItem';
+import Bottom from './components/screens/Bottom';
+import Sidebar from './components/screens/SideBar';
+
+
 
 
 function App() {
   return (
     <>
-      <Brand className="Appglass">
-        <SubHead />
-        <Header />
-      </Brand>
+    <div className='Appglass'>
+      <Sidebar />
+      <Top />
+    </div>
+      <MenuItem />
+      {/* <Home /> */}
+      <Bottom />
+      
     </>
    
  );
       
 }
-const Brand = styled.div``;
+
 
 export default App;
