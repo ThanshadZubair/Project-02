@@ -22,9 +22,9 @@ function MenuItem() {
                         <Roast>Roasting Type</Roast>
                         <Roasting>
                             <Pricebox><Price>25%</Price></Pricebox>
-                            <Pricebox><Price>25%</Price></Pricebox>
-                            <Pricebox><Price>25%</Price></Pricebox>
-                            <Pricebox><Price>25%</Price></Pricebox>
+                            <Pricebox><Price>50%</Price></Pricebox>
+                            <Pricebox><Price>75%</Price></Pricebox>
+                            <Pricebox><Price>100%</Price></Pricebox>
                         </Roasting>
                         <Pack>Volume Pack</Pack>
                         <Volume>
@@ -99,7 +99,7 @@ const Container = styled.section`
     position: absolute;
     top: 25%;
     left: 10%;
-    width: 64%;
+    width: 58%;
 `;
 const MainBox = styled.div`
     display: flex;
@@ -184,12 +184,14 @@ const Add = styled.a`
     display: block;
     padding: 15px;
     border-radius: 50px;
+    text-align: center;
 `;
 const View = styled.a`
     background-color: #EEECEB;
     display: block;
     padding: 15px;
     border-radius: 50px;
+    text-align: center;
 `;
 
 

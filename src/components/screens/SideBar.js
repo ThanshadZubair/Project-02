@@ -57,7 +57,7 @@ const SidebarContainer = styled.section`
     
 `;
 const ImgContainer = styled.div`
-margin-bottom: 60px;
+margin-bottom: 50%;
 `;
 const LogoImg = styled.img``;
 const Box = styled.div`

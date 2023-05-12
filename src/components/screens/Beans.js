@@ -63,9 +63,9 @@ function Beans() {
 
 const Content = styled.section`
 position: absolute;
-top: 15%;
+top: 13%;
 left: 10%;
-  width: 60%;
+  width: 56%;
   padding:30px 30px 30px 0;
 `;
 const TopContainer = styled.div`
