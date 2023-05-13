@@ -78,7 +78,6 @@ const Coffe = styled.div`
 `;
 const Item = styled.div`
   background: #F6F5F4;
-  width: 10%;
   border-radius:50px;
   height: 60px;
   display: flex;

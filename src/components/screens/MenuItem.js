@@ -19,7 +19,8 @@ function MenuItem() {
                                 <Select>$ 35.00</Select>
                             </Contents>
                         </Box>
-                        <Roast>Roasting Type</Roast>
+                        <View>View details</View>
+                        {/* <Roast>Roasting Type</Roast>
                         <Roasting>
                             <Pricebox><Price>25%</Price></Pricebox>
                             <Pricebox><Price>50%</Price></Pricebox>
@@ -32,7 +33,7 @@ function MenuItem() {
                             <Volumebox><Price>500g</Price></Volumebox>
                             <Volumebox><Price>750g</Price></Volumebox>
                         </Volume>
-                        <Add>Add to bill</Add>
+                        <Add>Add to bill</Add> */}
                     </Indonesian>
                     <Indonesian>
                         <Box>
@@ -151,41 +152,41 @@ const Para = styled.p`
 const Select = styled.h3`
 text-align: left;
 `;
-const Roasting = styled.div`
-    display: flex;
-    justify-content: space-between;
-`;
-const Pricebox = styled.div`
-    background-color: #EEECEB;
-    padding: 6px 35px;
-    border-radius: 50px;
-`;
-const Price = styled.h4`
-    font-size:14px
-`;
-const Volume = styled.div`
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-`;
-const Roast = styled.h4`
-`;
-const Pack = styled.h4`
-    text-align:left;
-`;
-const Volumebox = styled.div`
-    background-color: #EEECEB;
-    padding: 6px 48px;
-    border-radius: 50px;
-`;
-const Add = styled.a`
-    color: #fff;
-    background-color: #FF7B00;
-    display: block;
-    padding: 15px;
-    border-radius: 50px;
-    text-align: center;
-`;
+// const Roasting = styled.div`
+//     display: flex;
+//     justify-content: space-between;
+// `;
+// const Pricebox = styled.div`
+//     background-color: #EEECEB;
+//     padding: 6px 35px;
+//     border-radius: 50px;
+// `;
+// const Price = styled.h4`
+//     font-size:14px
+// `;
+// const Volume = styled.div`
+//     display: flex;
+//     justify-content: space-between;
+//     margin-bottom: 20px;
+// `;
+// const Roast = styled.h4`
+// `;
+// const Pack = styled.h4`
+//     text-align:left;
+// `;
+// const Volumebox = styled.div`
+//     background-color: #EEECEB;
+//     padding: 6px 48px;
+//     border-radius: 50px;
+// `;
+// const Add = styled.a`
+//     color: #fff;
+//     background-color: #FF7B00;
+//     display: block;
+//     padding: 15px;
+//     border-radius: 50px;
+//     text-align: center;
+// `;
 const View = styled.a`
     background-color: #EEECEB;
     display: block;
