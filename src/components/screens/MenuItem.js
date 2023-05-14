@@ -117,12 +117,10 @@ const Heading = styled.h2`
     text-align: left;
 `;
 const Indonesian = styled.div`
-    background: #F6F5F4;
-    /* padding:30px; */
+    background-color: #F6F5F4;
     width: 100%;
-
     border-radius:14px;
-    margin-bottom: 20px;
+    
 `;
 const Box = styled.div`
     display: flex;
@@ -130,10 +128,6 @@ const Box = styled.div`
 `;
 const Imager = styled.div`
     width: 200px;
-    /* height: 85px; */
-    background-color: #EEECEB;
-    /* padding: 0 50px; */
-    border-radius:14px;
     margin-right: 20px;
 `;
 const Image = styled.img`

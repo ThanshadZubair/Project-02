@@ -75,11 +75,20 @@ function Bills() {
                 <Payment>
                     <PaymentTag>Payment</PaymentTag>
                     <PaymentOption>
-                        <PayCash>Cash</PayCash>
-                        <PayDebit>Debit</PayDebit>
-                        <PayEWallet>E-Wallet</PayEWallet>
+                        <PayTag>
+                            <PayCash>Cash</PayCash>
+                        </PayTag>
+                        <PayTag>
+                            <PayDebit>Debit</PayDebit>
+                        </PayTag>
+                        <PayTag>
+                            <PayEWallet>E-Wallet</PayEWallet>
+                        </PayTag> 
                     </PaymentOption>
-                    <Checkout>Checkout</Checkout>
+                    <Conform>
+                        <Checkout>Checkout</Checkout>
+                    </Conform>
+                    
                 </Payment>
             </MainContainer>
         </>
@@ -89,7 +98,7 @@ function Bills() {
 const MainContainer = styled.section`
     position: absolute;
     top:17%;
-    right: 4%;
+    right: 5%;
     width: 25%;
 `;
 const Billing = styled.div`
@@ -141,9 +150,13 @@ flex-direction:column;
 justify-content: center;
 gap:5px;
 `;
-const Sub = styled.small``;
+const Sub = styled.small`
+font-weight:bold;
+`;
 const Para = styled.span``;
-const Select = styled.div``;
+const Select = styled.div`
+font-weight:bold;
+`;
 const Accounts = styled.div`
 gap:10px;
 display:flex;
@@ -187,6 +200,7 @@ color: red;
 const TotalTag = styled.div`
 display: flex;
 justify-content: space-between;
+margin-bottom: 30px;
 `;
 const Total = styled.span`
 font-weight: bold;
@@ -195,13 +209,45 @@ const TotalPrice = styled.span`
 font-weight: bold;
 color: #13EE5F;
 `;
-const Payment = styled.div``;
-const PaymentTag = styled.div``;
-const PaymentOption = styled.div``;
-const PayCash = styled.div``;
-const PayDebit = styled.div``;
-const PayEWallet = styled.div``;
-const Checkout = styled.div``;
+const Payment = styled.div`
+display: flex;
+flex-direction: column;
+gap:40px;
+`;
+const PaymentTag = styled.div`
+font-weight:bold;`;
+const PaymentOption = styled.div`
+display: flex;
+justify-content: space-between;
+`;
+const PayTag = styled.div`
+background-color: #FF7B00;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 50px;
+    text-align: center;
+`;
+const PayCash = styled.div`
+width: 66px;
+`;
+const PayDebit = styled.div`
+width: 66px;
+`;
+const PayEWallet = styled.div`
+width: 66px;
+`;
+const Conform = styled.div`
+display: inline-block;
+    
+    
+`;
+const Checkout = styled.div`
+background-color: #FF7B00;
+    display: block;
+    padding: 15px;
+    border-radius: 50px;
+    text-align: center;
+`;
 
 
 
