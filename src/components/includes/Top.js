@@ -52,7 +52,7 @@ function Top() {
 
 
 const Container = styled.section`
-   
+   width: 100%;
 `;
 const TopBox = styled.div`
     padding: 10px;
@@ -111,7 +111,7 @@ const Bell = styled.div`
 `;
 const Bellimg = styled.img`
     display: block;
-    width:100%
+    width:100%;
 `;
 const Profail = styled.div`
     width: 60px;
@@ -123,10 +123,10 @@ const Man = styled.img`
     display: block;
 `;
 const Position = styled.h5`
-    font-size:12px
+    font-size:12px;
 `;
 const Alex = styled.h3`
-    font-size:14px
+    font-size:14px;
 `;
 const Person = styled.div`
     display: flex;
@@ -154,7 +154,7 @@ const PlusImg = styled.img`
     width: 100%;
 `;
 const Menu = styled.h5`
-    font-size:16px
+    font-size:16px;
 `;
 const Hr = styled.hr`
     width: 96%;
