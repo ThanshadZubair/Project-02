@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { styled } from 'styled-components';
 
-function MenuItem({ beanItems, orders, setOrders, setBeanItems }) {
+function MenuItem({ beanItems, orders, setOrders, setBeanItems,items, selectedCategory }) {
 
     const [active, setActive] = useState(1)
     const [roast, setRoast] = useState("25%")
@@ -21,7 +21,7 @@ function MenuItem({ beanItems, orders, setOrders, setBeanItems }) {
                 return order;
             });
 
-            setOrders(updatedOrders);
+            setOrders(updatedOrders);  
         } else {
             const newOrder = {
                 id: item.id,
@@ -50,7 +50,7 @@ function MenuItem({ beanItems, orders, setOrders, setBeanItems }) {
     }
 
     let beanItemsLeft = () => {
-        return beanItems.slice(0, 2).map((item) => {
+        return beanItems.slice(0, 10).filter((item) => item.category === selectedCategory).map((item) => {
             return (
                 <Indonesian key={item.id}>
                     <Box>
@@ -90,7 +90,7 @@ function MenuItem({ beanItems, orders, setOrders, setBeanItems }) {
     }
 
     let beanItemsRight = () => {
-        return beanItems.slice(2).map((item) => {
+        return beanItems.slice(11).filter((item) => item.category === selectedCategory).map((item) => {
             return <Indonesian key={item.id}>
                 <Box>
                     <Imager>
@@ -204,7 +204,7 @@ const Pricebox = styled.div`
     cursor:pointer;
 `;
 const Price = styled.h4`
-    font-size:14px
+    font-size:14px;
 `;
 const Volume = styled.div`
     display: flex;

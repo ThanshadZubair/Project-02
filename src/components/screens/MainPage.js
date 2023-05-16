@@ -10,6 +10,13 @@ function MainPage() {
     <Container>
       <Routes>
         <Route path="/" element={[<Sidebar />,<Home/>]} />
+          {/* <Route index element={[<Sidebar />,<Home/>]} />
+          <Route path="/coffee" element={[<Sidebar />,<Home/>]} />
+          <Route path="/tea-2" element={[<Sidebar />,<Home/>]} />
+          <Route path="/cakes" element={[<Sidebar />,<Home/>]} />
+          <Route path="/bundles" element={[<Sidebar />,<Home/>]} />
+          <Route path="/snack" element={[<Sidebar />,<Home/>]} />
+        </Route> */}
         <Route path="tea/" element={[<Sidebar />,<ComingSoonPage/>]} />
         <Route path="wallet/" element={[<Sidebar />,<ComingSoonPage/>]} />
         <Route path="graph/" element={[<Sidebar />,<ComingSoonPage/>]} />

@@ -1,17 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { styled } from "styled-components";
+import { NavLink } from "react-router-dom"
 
-function Beans({ items }) {
-  const [active, setActive] = useState("");
+function Beans({ items, selectCategory }) {
+  const [active, setActive] = useState("Coffee");
+  useEffect(() => {
+    selectCategory(active)
+  }, [])
+  let handleClick = (dish) => {
+    console.log(dish)
+    setActive(dish)
+    selectCategory(dish)
+
+  }
   return (
     <>
       <Content className="Bean">
       <TopContainer>
         <Coffe>
           {items.map((item) => (
+            // <NavLink to="{/item.path}">
             <Item
               key={item.id}
-              onClick={() => setActive(item.dish)}
+              onClick={() => handleClick(item.dish)}
               style={active === item.dish ? { background: '#FF7B00' } : null}
             >
               <Box style={active === item.dish ? { background: '#FFF' } : null}>
@@ -23,7 +34,6 @@ function Beans({ items }) {
               </Box>
               <Dish style={active === item.dish ? { color: '#FFF' } : null}>{item.dish}</Dish>
             </Item>
-            
           ))}
         </Coffe>
       </TopContainer>
