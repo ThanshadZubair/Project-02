@@ -19,7 +19,6 @@ function Beans({ items, selectCategory }) {
       <TopContainer>
         <Coffe>
           {items.map((item) => (
-            // <NavLink to="{/item.path}">
             <Item
               key={item.id}
               onClick={() => handleClick(item.dish)}
