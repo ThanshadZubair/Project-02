@@ -60,10 +60,11 @@ function Sidebar() {
 }
 
 const SidebarContainer = styled.section`
-  padding: 40px 0;
+  padding: 40px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
 `;
 const ImgContainer = styled.div`
   margin-bottom: 50%;

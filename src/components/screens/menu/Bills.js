@@ -105,13 +105,13 @@ function Bills({ orders, setOrders }) {
                 <Accounts>
                   <Round onClick={() => updateOrderQuantity(item.id, -1)}>
                     <Cash
-                      src={require("../../../Assets/images/Minus.svg")}
+                      src={require("../../../Assets/images/Minus.svg").default}
                     ></Cash>
                   </Round>
                   <CashTag>{item.quantity}</CashTag>
                   <Round onClick={() => updateOrderQuantity(item.id, +1)}>
                     <Cash
-                      src={require("../../../Assets/images/Plus.svg")}
+                      src={require("../../../Assets/images/Plus.svg").default}
                     ></Cash>
                   </Round>
                 </Accounts>
